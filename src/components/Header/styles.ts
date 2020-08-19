@@ -11,6 +11,8 @@ export const Container = styled.div`
   @media (max-width: 500px) {
     flex-direction: column;
     position: relative;
+
+    border-bottom: 0.5px solid #4d6a6d;
   }
 `;
 
@@ -55,6 +57,6 @@ export const Actions = styled.div`
   }
 
   @media (max-width: 500px) {
-    margin-top: 0.6rem;
+    margin: 0.6rem 0 1rem 0;
   }
 `;

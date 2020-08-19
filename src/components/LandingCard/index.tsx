@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
+import { Link } from 'react-router-dom';
 
 import { Container } from './styles';
 
-const LandingCard: React.FC = () => {
+interface LandingCardProps {
+  children: ReactNode;
+  route: string;
+}
+
+const LandingCard: React.FC<LandingCardProps> = ({ children, route }) => {
   return (
     <Container>
-      <h1>test</h1>
+      <Link to={route}>
+        <span>{children}</span>
+      </Link>
     </Container>
   );
 };

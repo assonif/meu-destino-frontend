@@ -1,13 +1,23 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import LandingCard from '../../components/LandingCard';
+
+import { Container } from './styles';
 
 const Landing: React.FC = () => {
   return (
-    <>
-      <h1>landing page</h1>
-      <h2>landing component</h2>
-    </>
+    <Container>
+      <LandingCard route="/">
+        <strong>JÁ SEI </strong>
+        PRA ONDE
+        <strong>EU VOU!</strong>
+      </LandingCard>
+      <LandingCard route="/filters">
+        ACEITO
+        <strong> SUGESTÕES </strong>
+        DE DESTINOS!
+      </LandingCard>
+    </Container>
   );
 };
 
