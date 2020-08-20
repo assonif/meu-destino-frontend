@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Container, Actions } from './styles';
 
@@ -8,9 +9,9 @@ const logo = require('../../assets/logo.png');
 const Header: React.FC = () => {
   return (
     <Container>
-      <a href="/">
+      <Link to="/">
         <img src={logo} alt="Meu destino" />
-      </a>
+      </Link>
       <Actions>
         <a href="/">Entrar</a>
         <button type="button">Anunciar</button>
