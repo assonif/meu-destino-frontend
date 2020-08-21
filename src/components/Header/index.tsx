@@ -13,7 +13,7 @@ const Header: React.FC = () => {
         <img src={logo} alt="Meu destino" />
       </Link>
       <Actions>
-        <a href="/">Entrar</a>
+        <Link to="login">Entrar</Link>
         <button type="button">Anunciar</button>
       </Actions>
     </Container>
