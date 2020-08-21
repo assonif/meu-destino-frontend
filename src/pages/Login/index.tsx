@@ -3,7 +3,7 @@ import React from 'react';
 import { Container } from './styles';
 
 const Login: React.FC = () => {
-  return <Container>logins</Container>;
+  return <Container>logisns</Container>;
 };
 
 export default Login;
